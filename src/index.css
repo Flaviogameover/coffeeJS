@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #7a756c;
+}
+
+.app{
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 40px 80px;
+}
+
+.coffee-search{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.coffee-search-flex{
+    display: flex;
+}
+
+button{
+    padding: 0 10px;
+    background-color: rgb(198, 239, 255);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(67, 173, 215);
+    color: white;
+
+}
+
+.coffee-search p{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.coffee-search input{
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding-left: 8px;
+    height: 34px;
+    font-size: 18px;
+}
+
+.coffee-main{
+    display: flex;
+    margin-top: 10px;
+}
+
+.coffee-video{
+    margin: 10px;
+    width: 70%;
+}
+
+.video-container{
+    max-width: 700px;
+}
+
+.video-container iframe{
+    width: 100%;
+}
+
+.video-info{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.video-info h2{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.video-info p{
+    font-size: 15px;
+}
+
+.coffee-similar{
+    margin: 10px;
+    width: 30%;
+}
+
+.coffee-similar-single{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.single-container{
+    max-width: 150px;
+}
+
+.single-container img{
+    width: 150px;
+}
+
+.single-info{
+    padding: 0 10px;
+}
+
+.single-info h3{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 968px){
+    .video-info h2{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    
+    .video-info p{
+        font-size: 13px;
+    }
+    
+    .single-info h3{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .coffee-main{
+        display: block;
+    }
+    
+    .coffee-video{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .video-container{
+        max-width: 100%;
+    }
+    
+    .video-info h2{
+        font-size: 23px;
+    }
+    
+    .video-info p{
+        font-size: 16px;
+    }
+    
+    .coffee-similar{
+        width: 100%;
+    }
+    
+    .single-container{
+        max-width: 100%;
+    }
+
+    .single-info h3{
+        font-size: 23px;
+    }
+    
 }
